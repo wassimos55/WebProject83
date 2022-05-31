@@ -60,10 +60,10 @@
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 25px;
                 /* identical to box height */
-
+                margin-bottom:0px;
                 display: flex;
                 align-items: center;
                 letter-spacing: 0.15px;
@@ -104,6 +104,33 @@
             }
             .maison{
                 margin-bottom:0px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600 !important;
+                font-size: 18px;
+                line-height: 25px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.15px;
+
+                color: #000000;
+            }
+            .maisonecrit{
+                margin-bottom:0px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 500 !important;
+                font-size: 16px;
+                line-height: 25px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.15px;
+
+                color: #000000;
             }
             .text-maison{
                 font-family: 'Open Sans';
@@ -129,6 +156,12 @@
             }
             .graubtn{
                 background: #aaaaaa;
+                border-radius: 4px;
+                color : #fff;
+                margin-top: 24px;
+            }
+            .graubtn:hover{
+                background: #8a8a8a;
                 border-radius: 4px;
                 color : #fff;
             }
@@ -189,6 +222,7 @@
                 /* black / 90 */
 
                 color: #848484;
+
             }
             .check{
                 font-family: 'Open Sans';
@@ -227,8 +261,51 @@
                 display: flex;
                 align-items: center;
                 letter-spacing: 0.15px;
+                margin-bottom:0px;
+                color: #000000;
+            }
+            .price{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600 !important;
+                font-size: 24px;
+                line-height: 36px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.15px;
+                margin-bottom:0px;
+                color: #000000;
+            }
+            .desc{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600 !important;
+                font-size: 20px;
+                line-height: 30px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.15px;
 
                 color: #000000;
+
+            }
+            .helper{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                /* identical to box height, or 133% */
+
+                letter-spacing: 0.4px;
+
+                /* Black — Medium Emphasis */
+
+                color: rgba(0, 0, 0, 0.6);
+
+                mix-blend-mode: normal;
             }
         </style>
 </head>
@@ -310,11 +387,13 @@
           <div class="col-md-6">
               <h5 class="mobil">Mobil home 600 m de la plage</h5>
               <p class="fw-normal vias">32 m² · Vias 34450</p>
-              <h5 class="fw-bolder">29 000 € </h5>
+              <h5 class="price">29 000 € </h5>
               <p class="smoll">906 €/m²</p>
           </div>
           <div class="col-md-6">
-              <p class="smoll">01/05/2021 à 17:13</p>
+              <div class="d-flex flex-row-reverse">
+                  <p class="smoll">01/05/2021 à 17:13</p>
+              </div>   
               <button type="button" class="w-100 mt-4 btn btn-outline-danger" data-mdb-ripple-color="dark">Signaler un terrain litigieux</button>
           </div>
       </div>
@@ -325,7 +404,7 @@
 <hr>
 <!--Start Dsc section-->
 <section class="mb-4">
-    <h5 class="fw-bolder mt-3">Description</h5>
+    <h5 class="desc mt-3">Description</h5>
     <p class="fw-normal nrml">
         Vends mobil home 2 chambres
     </p>
@@ -352,7 +431,7 @@
 <hr>
 <!--start Features Sections-->
 <sevtion>
-    <h5 class="fw-bolder mt-3">Critéres</h5>
+    <h5 class="desc mt-3">Critéres</h5>
     <div class="row">
         <div class="col-md-4 ftr">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -408,7 +487,7 @@
 <hr>
 <!-- Start Map Sections-->
 <section>
-    <h5 class="fw-bolder mt-3">Vias 34450</h5>
+    <h5 class="desc mt-3">Vias 34450</h5>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6790062.800094463!2d14.052867340341008!3d33.80043130182116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x125595448316a4e1%3A0x3a84333aaa019bef!2z2KrZiNmG2LPigI4!5e0!3m2!1sar!2stn!4v1653841272387!5m2!1sar!2stn" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -417,7 +496,7 @@
 <hr>
 <!--Start Commentaires Sections-->
 <section>
-    <h5 class="fw-bolder mt-3">Commentaires</h5>
+    <h5 class="desc mt-3">Commentaires</h5>
     <div class="blue">
         <div class="flexd mt-3">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,7 +505,7 @@
                 <path d="M7.46582 37.9688C10.259 32.9601 15.943 29.5312 22.5008 29.5312C29.0586 29.5312 34.7427 32.9601 37.5358 37.9688" stroke="#848484"/>
             </svg>
             <div class="usertext mx-3">
-                <h6 class="fw-bolder maison">Maison Argenteuil a écrit</h6>    
+                <h6 class="maison ">Maison Argenteuil <span class="maisonecrit mx-2"> a écrit</span></h6>    
                 <p class="fw-normal text-maison">le 11 mai 2020</p> 
             </div>
         </div>
@@ -437,7 +516,7 @@
                 
                 Bonne continuation.</p>
     
-                <button type="button" class="btn graubtn shadow-none px-5">Reponde</button>
+                <button type="button" class="btn graubtn shadow-none px-4 ">Reponde</button>
             </div>
             <div class="col-md-2">
                
@@ -449,7 +528,7 @@
 <hr>
 <!--Start Form Section-->
 <section>
-    <h5 class="fw-bolder mt-3">Laisser un commentaire</h5>
+    <h5 class="desc mt-3">Laisser un commentaire</h5>
     <p class="cmntr">
         * Votre adresse de messagerie ne sera pas publiée. Les champs obligatoires sont indiqués avec.
     </p>
@@ -464,7 +543,7 @@
         <!-- Message input -->
         <div class="form-outline mb-4">
             <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-            <label class="form-label" for="form6Example7">Additional information</label>
+            <label class="form-label" for="form6Example7">Commentaire</label>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -472,12 +551,14 @@
                     <div class="form-outline mb-4">
                       <input type="text" id="form5Example1" class="form-control" />
                       <label class="form-label" for="form5Example1">Nom</label>
+                      <div class="form-helper helper px-2"> *champ requis</div>
                     </div>
                   
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                       <input type="email" id="form5Example2" class="form-control" />
                       <label class="form-label" for="form5Example2">Address Email </label>
+                      <div class="form-helper helper px-2"> *champ requis</div>
                     </div>   
                     <!-- Email Site Web -->
                     <div class="form-outline mb-4">
@@ -494,7 +575,7 @@
                 </label>
         </div>
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary mb-4">Laisser un commentaire</button>
+        <button type="submit" class="btn btn-primary mb-4 shadow-none">Laisser un commentaire</button>
 
 
       
