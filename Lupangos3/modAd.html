@@ -150,6 +150,23 @@
             .mt{
               padding-top:29px!important;
             }
+            .colocations{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400 !important;
+                font-size: 14px;
+                line-height: 19px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.15px;
+
+                /* black / 90 */
+
+                color: #848484;
+
+            }
             
         </style>
 </head>
@@ -161,11 +178,34 @@
 <p class="chaque text-center">Chaque fois qu'un client consulte votre titre gagnez 1000 FCFA</p>
 
 
-<div class="container">
+<div class="my-3">
+    <div class="mx-1">
+        <p class="title2">Modifiez votre annonce</p>
+        <!--start Card Here-->
+        <div class="card mb-4 shadow-sm mt-2 mx-2 rounded-2"  >
+            <div class="row rowpad">
+                <div style="background-image: url('https://mdbootstrap.com/img/new/standard/city/041.jpg');   background-repeat: no-repeat; background-size: 100% 100%;" class=" tcard col-md-2 rounded-start position-relative ">
+                    <div class=" position-absolute bottom-0 end-0 py-2 px-3 ">
+                        <div class="camera"> <a class="fw-bolder text-white " href=""><i class="fas fa-camera"></i> 3</a> </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                <h6 class="fw-bolder mt-2">Colocation étudiante à Cergy Préfecture</h6>
+                <p class="pt">480 €</p>
+                <br>
+                <p class="colocations">Colocations</p>
+
+
+                </div>
+            
+            </div>
+        </div> 
+    </div> 
+    <!--End Card Here-->
     <div class="card rounded-2 ">
         <div class="row">
             <div class="col-md-4 px-4 py-3">
-                <p class="title2">Ajouter une nouveau terrain</p>
+                <p class="title2">Modifiez les critéres</p>
                 <form>
                     <!-- text input -->
                     <div class="form-outline mb-4">
@@ -212,7 +252,7 @@
                      <div class="form-outline mb-4">
                        <input class="form-control" type="file" id="formFileMultiple" multiple />
                     </div>
-                    <p class="title2  mt">Ajouter le titre et la description</p>
+                    <p class="title2  mt">Modifiez le titre et la description</p>
                     <div class="form-outline mb-4">
                         <input type="text" id="form16" class="form-control"  />
                         
@@ -238,7 +278,7 @@
         </div> 
         <div class="row">
             <div class="col-md-4 px-4">
-                <p class="title2 mt">Ajouter le prix</p>
+                <p class="title2 mt">Modifiez le prix</p>
                      <!-- text input -->
                      <div class="form-outline mb-4">
                         <span class=" trailing"> FCFA</span>
@@ -250,7 +290,7 @@
         <!--Form Images-->
         <div class="row">
           <div class="col-md-12 px-4">
-              <p class="title2 mt">Ajouter ou ajoutez des photos</p>
+              <p class="title2 mt">Modifiez ou ajoutez des photos</p>
                 <div class="w">   
                   <div class="upload">
                       <img src="cam.png" width="100" height="100">
@@ -279,7 +319,7 @@
       
       
       <div class="p-3">
-        <p class="title2">Ajouter la localisation</p>
+        <p class="title2">Modifiez la localisation</p>
       </div>
 
         <iframe class="px-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6789338.256963639!2d14.053334911280995!3d33.80956279065046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x125595448316a4e1%3A0x3a84333aaa019bef!2z2KrZiNmG2LPigI4!5e0!3m2!1sar!2stn!4v1654156231065!5m2!1sar!2stn" width="full" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
